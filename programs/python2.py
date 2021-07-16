@@ -48,7 +48,14 @@ def one(string):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 def two(num):
-    return False
+    list_of_num = []
+    for i in range(1, num+1):
+        if num % i ==0:
+            list_of_num.append(i)
+    if len(list_of_num) == 2:
+        return True
+    else:
+        return False
 
     # <QUESTION 3>
 
