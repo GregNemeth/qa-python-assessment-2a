@@ -177,7 +177,11 @@ def six(string):
     # Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
-    return False
+    eight = sorted([a, b, c])
+    if eight[2] - eight[1] == eight[1] - eight[0]:
+        return True
+    else:
+        return False
 
     # <QUESTION 8>
 
