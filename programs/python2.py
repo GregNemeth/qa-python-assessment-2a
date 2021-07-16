@@ -103,7 +103,10 @@ def three(a):
     # How would you seperate a string into characters?
 
 def four(string1, string2):
-    return ""
+    output = ''
+    for i in range(len(string1)):
+        output += string1[i] + string2[i]
+    return output
 
     # <QUESTION 5>
 
