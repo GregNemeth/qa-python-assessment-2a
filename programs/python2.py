@@ -148,7 +148,8 @@ def five():
     # There are no hints for this question.
     
 def six(string):
-    return False
+
+    return string.lower().endswith('py')
 
     # <QUESTION 7>
 
