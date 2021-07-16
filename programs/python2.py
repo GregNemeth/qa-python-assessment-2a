@@ -123,7 +123,13 @@ def four(string1, string2):
     # The random module contains a function called randint.
 
 def five():
-    return []
+    from random import randint
+    output = []
+    while len(output) < 5:
+        a = randint(100, 200)
+        if a%2 == 0:
+            output.append(a)
+    return output
 
     # <QUESTION 6>
 
