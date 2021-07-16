@@ -29,6 +29,9 @@
     # <HINT>
     # How does a for loop iterate through a string?
 
+from math import fabs
+
+
 def one(string):
     output = ''
     for letter in string:
@@ -199,7 +202,14 @@ def seven(a, b, c):
     # Use the cli to access the documentation help(str.replace)
 
 def eight(string, num):
-    return ""
+    if len(string) - num == 0:
+        return ''
+    else:
+        output = ''
+        beginning = string[:int((len(string) - num)/2)]
+        end = string[-int((len(string) - num)/2):]
+        output += beginning + end
+        return output
 
     # <QUESTION 9>
 
@@ -216,6 +226,7 @@ def eight(string, num):
     # There are no hints for this question.
 
 def nine(string1, string2):
+
     return False
 
     # <QUESTION 10>
@@ -234,4 +245,9 @@ def nine(string1, string2):
     # Think about nesting for loops.
 
 def ten(a, b):
-    return []
+    list = []
+    for i in range(1, a+1):
+        for j in range(1, b+1):
+            list.append(i*j)
+
+    return list
